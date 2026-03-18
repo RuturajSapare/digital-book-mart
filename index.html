@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+
+      <!--=============== STYLE CSS ===============-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--=============== cart CSS ===============-->
+    <link rel="stylesheet" href="cart.css">
+    
+    <title>Digital-Book-Mart</title>
+</head>
+<body>
+    <!--------------------------Header------------------------------->
+       <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-book-3-line"></i> Digital-Book-Mart
+            </a>
+               
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <i class="ri-book-3-line"></i>
+                            <span>Featured</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>Discount</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-bookmark-line"></i>
+                            <span>New Books</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="ri-message-3-line"></i>
+                            <span>Testimonial</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+
+            <div class="nav__actions">
+                <!--Search button-->
+                <i class="ri-search-line search-button" id="search-button"></i>
+
+                <!--Login button-->
+                <a href="login.html">
+                <i class="ri-user-line login-button" id="login-button"></i>
+                </a>
+
+                <!--Cart button-->
+                <div id="cart-icon">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-item-count"></span>
+                </div>
+                
+                <!--theme button-->
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+            </div>
+        </nav>
+       </header>
+
+    <!-------------------------------Search------------------------------------->
+    <div class="search" id="search-content">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="what are you looking for ?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+     <!--==================== LOGIN ====================-->
+     
+     <!--==================== MAIN ====================-->
+     <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+           <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Browse & <br>
+                    Select E-Books
+                </h1>
+
+                <p class="home__description">
+                    Find the best e-books from your favorite 
+                    writers, explore hundreds of books with all 
+                    possible categories, take advantage of the 
+                    50% discount and much more. 
+                </p>
+
+                <a href="#" class="button">Explore Now</a>
+            </div>
+
+            <div class="home__images">
+                <div class="home__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                            <a href="product.html">
+                            <img src="images/home-book-1.png" alt="image" class="home__img">
+                            </a>
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                            <img src="images/home-book-2.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                            <img src="images/home-book-3.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                            <img src="images/home-book-4.png" alt="image" class="home__img">
+                        </article>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section">
+           <div class="services__container container grid">
+               <article class="services__card">
+                <i class="ri-truck-line"></i>
+                <h3 class="services__title">Free Shipping</h3>
+                <p class="services__description">Order More Than $100</p>
+               </article>
+
+               <article class="services__card">
+                <i class="ri-lock-2-line"></i>
+                <h3 class="services__title">Secure Payment</h3>
+                <p class="services__description">100% Secure Payment</p>
+               </article>
+
+               <article class="services__card">
+                <i class="ri-customer-service-2-line"></i>
+                <h3 class="services__title">24/7 Support</h3>
+                <p class="services__description">Call us anytime</p>
+               </article>
+           </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section" id="featured">
+            <h2 class="section__title">
+                <span class="title-color">Featured Books</span>
+            </h2>
+ 
+            <div class="featured__container container">
+                <div class="featured__swiper swiper">
+                 <div class="swiper-wrapper">
+                     <article class="featured__card swiper-slide">
+                         <img src="images/Agamas and Tantras book.jpg" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹1100</span>
+                             <span class="featured__price">₹1900</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                             <button><i class="ri-shopping-cart-2-line add-cart"></i></button>
+                         </div>
+                     </article>
+                     
+                     <article class="featured__card swiper-slide">
+                         <img src="images/bhagvatgita book.jpg" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹1500</span>
+                             <span class="featured__price">₹3500</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/shiv Puranas.jpg" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹1000</span>
+                             <span class="featured__price">₹1400</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/Upanishads.jpg" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹600</span>
+                             <span class="featured__price">₹1200</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/book-5.png" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹789</span>
+                             <span class="featured__price">₹1500</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/book-6.png" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹450</span>
+                             <span class="featured__price">₹950</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/book-7.png" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹600</span>
+                             <span class="featured__price">₹1200</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/book-8.png" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹700</span>
+                             <span class="featured__price">₹1400</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/book-9.png" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹459</span>
+                             <span class="featured__price">₹859</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+ 
+                     <article class="featured__card swiper-slide">
+                         <img src="images/krishna book.jpg" alt="image" class="featured__img">
+ 
+                         <h2 class="featured__title">Featured Books</h2>
+                         <div class="featured__prices">
+                             <span class="featured__discount">₹599</span>
+                             <span class="featured__price">₹1499</span>
+                         </div>
+ 
+                         <button class="button">Add To Cart</button>
+ 
+                         <div class="featured__actions">
+                             <button><i class="ri-search-line"></i></button>
+                             <button><i class="ri-heart-3-line"></i></button>
+                             <button><i class="ri-eye-line"></i></button>
+                         </div>
+                     </article>
+                 </div>
+ 
+                    <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                    </div>
+ 
+                    <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+         </section>
+        
+        <!--==================== DISCOUNT ====================-->
+        <section class="discount section" id="discount">
+           <div class="discount__container container grid">
+               <div class="discount__data">
+                   <h2 class="discount__title section__title">
+                    Up To 50% Discount 
+                   </h2>
+
+                   <p class="discount__description">
+                    Take advantage of the discount days we 
+                    have for you, buy books from your favorite 
+                    writers, the more you buy, the more 
+                    discounts we have for you.
+                   </p>
+
+                   <a href="#" class="button">Shop Now</a>
+               </div>
+
+               <div class="discount__images">
+                   <img src="images/discount-book-1.png" alt="image" class="discount__img-1">
+                   <img src="images/discount-book-2.png" alt="image" class="discount__img-2">
+               </div>
+           </div>
+        </section>
+
+        <!--==================== NEW BOOKS ====================-->
+        <h1 class="section__title">
+          <span class="title-color">ENGLISH BOOKS</span>
+           </h1>
+
+        <div class="cart">
+            <h2 class="cart-title"><span class="title-color">Your Cart</span></h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="book-3.png" class="cart-img">
+                    <div class="cart-detail">
+                        <h2 class="cart-product-title">New Book</h2>
+                        <span class="cart-price">₹1110</span>
+                        <div class="cart-quantity">
+                            <button id="decrement">-</button>
+                            <span class="number">1</span>
+                            <button id="increment">+</button>
+                        </div>
+                    </div>
+                    <i class="ri-delete-bin-line cart-remove"></i>
+                </div> -->
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₹0</div>
+            </div>
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+
+        <section class="shop">
+            <h1 class="section-title"></h1>
+            <div class="product-content">
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/greek book.jpg">
+                    </div>
+                    <h2 class="product-title">Greek Myths</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹450</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/illuminati book.jpg">
+                    </div>
+                    <h2 class="product-title">The Illuminati</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹560</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/annabella book.jpg">
+                    </div>
+                    <h2 class="product-title">Annabelle Book</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹800</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Harry Poter book'.jpg">
+                    </div>
+                    <h2 class="product-title">Harry Potter</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹950</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/The Golden Compass.jpg">
+                    </div>
+                    <h2 class="product-title">The Golden Compass </h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹600</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/the art of not overthinking.jpg">
+                    </div>
+                    <h2 class="product-title">The Art Of Not Overthinking</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹700</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Wise and otherwise.jpg">
+                    </div>
+                    <h2 class="product-title">Wise And Otherwise</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹400</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Batman.jpg">
+                    </div>
+                    <h2 class="product-title">Batman Book</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹1000</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </br>
+           <h1 class="section__title">
+           <span class="title-color">MARATHI BOOKS</span>
+           </h1>
+
+           <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="book-3.png" class="cart-img">
+                    <div class="cart-detail">
+                        <h2 class="cart-product-title">New Book</h2>
+                        <span class="cart-price">₹1110</span>
+                        <div class="cart-quantity">
+                            <button id="decrement">-</button>
+                            <span class="number">1</span>
+                            <button id="increment">+</button>
+                        </div>
+                    </div>
+                    <i class="ri-delete-bin-line cart-remove"></i>
+                </div> -->
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₹0</div>
+            </div>
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+
+        <section class="shop">
+            <h1 class="section-title"></h1>
+            <div class="product-content">
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/marthi-book.jpeg">
+                    </div>
+                    <h2 class="product-title">Balbharthi Book</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹110</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/shriman-yogi.jpg">
+                    </div>
+                    <h2 class="product-title">Shrreman Yogi </h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹560</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/shyamchi aai.jpg">
+                    </div>
+                    <h2 class="product-title">Shyamchi Aai</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹800</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/father rakhimadevivara.jpg">
+                    </div>
+                    <h2 class="product-title">Father Rakhimadevivara</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹950</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Mahabharata book.jpg">
+                    </div>
+                    <h2 class="product-title">Mahabharata Book</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹600</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Ramayana book.jpg">
+                    </div>
+                    <h2 class="product-title">Ramayana Book</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹700</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/bgm.book.webp">
+                    </div>
+                    <h2 class="product-title">Bhagvatgita Book</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹1200</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chhava book.jpeg">
+                    </div>
+                    <h2 class="product-title">Chhava Book</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹1000</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 class="section__title">
+            <span class="title-color">HINDI Books</span>
+           </h1>
+
+           <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="book-3.png" class="cart-img">
+                    <div class="cart-detail">
+                        <h2 class="cart-product-title">New Book</h2>
+                        <span class="cart-price">₹1110</span>
+                        <div class="cart-quantity">
+                            <button id="decrement">-</button>
+                            <span class="number">1</span>
+                            <button id="increment">+</button>
+                        </div>
+                    </div>
+                    <i class="ri-delete-bin-line cart-remove"></i>
+                </div> -->
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₹0</div>
+            </div>
+            <button class="btn-buy"><a href="html/payment.html">Buy Now</a></button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+
+        <section class="shop">
+            <h1 class="section-title"></h1>
+            <div class="product-content">
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Dr.a.p.j.jpg">
+                    </div>
+                    <h2 class="product-title">Dr.A.P.J</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹380</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/trading.jpg">
+                    </div>
+                    <h2 class="product-title">Trading Charts </h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹600</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/chandrakanta.jpg">
+                    </div>
+                    <h2 class="product-title">ChandraKanta</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹200</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/balbharti hindi.webp">
+                    </div>
+                    <h2 class="product-title">Balbharthi Hindi</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹110</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Akbar aur birbal.jpg">
+                    </div>
+                    <h2 class="product-title">Akbar Aur Birbal</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹300</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/godan2.png">
+                    </div>
+                    <h2 class="product-title">Godan By PremChand</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹150</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Gitanjali.jpg">
+                    </div>
+                    <h2 class="product-title">Gitanjali</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹200</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="images/Rich Dad.jpg">
+                    </div>
+                    <h2 class="product-title">Business School</h2>
+                    <div class="price-and-cart">
+                        <span class="price">₹500</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>   
+
+        <!--==================== JOIN ====================-->
+        <section class="join section">
+           <div class="join__container">
+            <img src="images/join-bg.jpg" alt="image" class="join__bg">
+
+            <div class="join__data container grid">
+                <h2 class="join__title section__title">
+                    Subscribe To Receive <br>
+                    The Latest Updates
+                </h2>
+
+                <form action="" class="join__form">
+                    <input type="email" placeholder="Enter email" class="join__input">
+                    <button type="submit" class="join__button button">Subscribe</button>
+                </form>
+            </div>
+           </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section" id="testimonial">
+           <h2 class="section__title">
+            Customer Opinions
+           </h2>
+      
+           <div class="testimonial__container container">
+            <div class="testimonial__swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="testimonial__card swiper-slide">
+                        <img src="images/testimonial-perfil-1.png" alt="image" class="testimonial__img">
+    
+                        <h2 class="testimonial__title">Rial Loz</h2>
+                        <p class="testimonial__description">
+                            The best website to buy books, the purchase 
+                            is very easy to make and has great discounts.
+                        </p>
+    
+                        <div class="testimonial__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                        </div>
+                    </article>
+    
+                    <article class="testimonial__card swiper-slide">
+                        <img src="images/mm1.jpg" alt="image" class="testimonial__img">
+    
+                        <h2 class="testimonial__title">Sahil Mishra</h2>
+                        <p class="testimonial__description">
+                            The best website to buy books, the purchase 
+                            is very easy to make and has great discounts.
+                        </p>
+    
+                        <div class="testimonial__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                        </div>
+                    </article>
+
+                    
+                    <article class="testimonial__card swiper-slide">
+                        <img src="images/ss.jpg" alt="image" class="testimonial__img">
+    
+                        <h2 class="testimonial__title">Shreetej Shinde</h2>
+                        <p class="testimonial__description">
+                            The best website to buy books, the purchase 
+                            is very easy to make and has great discounts.
+                        </p>
+    
+                        <div class="testimonial__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                        </div>
+                    </article>
+
+                    
+                    <article class="testimonial__card swiper-slide">
+                        <img src="images/testimonial-perfil-4.png" alt="image" class="testimonial__img">
+    
+                        <h2 class="testimonial__title">Jason Roy</h2>
+                        <p class="testimonial__description">
+                            The best website to buy books, the purchase 
+                            is very easy to make and has great discounts.
+                        </p>
+    
+                        <div class="testimonial__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                        </div>
+                    </article>
+                </div>
+              </div>
+           </div>
+        </section>
+     </main>
+
+     <!--==================== FOOTER ====================-->
+     <footer class="footer">
+        <div class="footer__container conrainer grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <i class="ri-book-3-line"></i>Digital-Book-Mart
+                </a>
+
+                <p class="footer__description">
+                    Find and explore the best <br>
+                    eBooks from all your <br>
+                    favorite writers.
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">About</h3> 
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Awards</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Privacy policy</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Terms of services</a>
+                            </li>
+                        </ul>
+                   </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3> 
+                    
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Blogs</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Community</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Our Team</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Help center</a>
+                            </li>
+                        </ul>
+                </div>
+
+
+                <div>
+                    <h3 class="footer__title">Contact</h3> 
+                    
+                        <ul class="footer__links">
+                            <li>
+                                <address class="footer__info">
+                                    Manik Baug <br>
+                                    Sinhagad Road, Pune-411051
+                                </address>
+                            </li>
+
+                            <li>
+                                <address class="footer__info">
+                                    e.book@email.Com<br>
+                                    7796024xxx
+                                </address>
+                            </li>
+                        </ul>
+                </div>
+
+
+                <div>
+                    <h3 class="footer__title">Social</h3> 
+                    
+                    <div class="footer__social">
+                        <a href=" https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href=" https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href=" https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; All Rights Reserved By Digital-Book-Mart
+        </span>
+        <span class="footer__copy">
+            Created By Ruturaj & Yash
+        </span>
+     </footer>
+
+     <!-- loader-->
+     <div class="loader-container">
+        <img src="images/Loader.gif" alt="Loading...">
+    </div> 
+    
+    
+
+     <!--========== SCROLL UP ==========-->
+     <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+     </a>
+
+     <!--===========SCROLLREVEAL===========-->
+      <!-- <script src="scrollreveal.min.js"></script> -->
+      
+     <!--===========SWIPER JS===========-->
+     <script src="swiper-bundle.min.js"></script>
+
+      <!--===========MAIN JS===========-->
+    <script src="main.js"></script>
+
+      <!--========cart js=============-->
+      <script src="cart.js"></script>
+</body>
+</html>
